@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+* {
+    font-family: 'Outfit';
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+h2 {
+    color: #fff;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+h2:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+h3 {
+    color: hsl(178, 100%, 50%);
+    margin: 0 5px 10px;
+}
+
+p,
+.p {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    opacity: 50%;
+    margin-left: 5px;
+}
+
+p:hover {
+    display: none;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    padding: 10px;
+    margin: 80px auto;
+    width: 380px;
+    border-radius: 15px;
+    box-shadow: 0 30px 0 15px rgba(0, 0, 0, 0.2);
+    border: 1px;
+}
+
+.card p {
+    padding: 0 15px;
+}
+
+
+/* Image */
+
+.container {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    display: inline-block;
+    margin: 20px 20px auto;
+}
+
+.image {
+    display: block;
+    width: 340px;
+    height: 340px;
+    border-radius: 20px;
+}
+
+.overlay {
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.icon {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.fade {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: hsl(178, 100%, 50%);
+}
+
+.container:hover .overlay {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.container:hover .fade {
+    width: 100%;
+}
+
+.container .overlay .icon .fas {
+    opacity: 1;
+}
+
+
+/* End Image */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.flex ul {
+    display: flex;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.flex ul li {
+    list-style-type: none;
+}
+
+hr {
+    margin: 0 15px;
+    opacity: 50%;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin-left: 6px;
+    margin-right: -4px;
+}
+
+.user b {
+    color: #fff;
+}
+
+.user:hover b {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+@media screen and (max-width: 428px) {
+    .container,
+    .image {
+        width: 95%;
+        height: auto;
+        margin: 10px;
+    }
+    h2 {
+        margin: 0;
+    }
+    .card {
+        width: 90%;
+    }
+}
