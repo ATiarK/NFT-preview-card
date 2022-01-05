@@ -153,6 +153,11 @@ hr {
     color: hsl(178, 100%, 50%);
 }
 
+.attribution {
+    color: #fff;
+    text-align: center;
+}
+
 @media screen and (max-width: 428px) {
     .container,
     .image {
